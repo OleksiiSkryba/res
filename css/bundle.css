@@ -609,11 +609,13 @@ because the nesting selector cannot represent pseudo-elements. */
   height: 10rem;
   border-radius: 50%;
   border:1rem solid var(--greyDark);
+  box-shadow: rgba(0, 0, 0, 0.8) 5px 10px 30px 5px;
   margin-top: -10rem;
 }
 
 .colored>article>img{
   width: 100%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 8px);
 }
 
 #tab-1:checked ~ #tabs {
