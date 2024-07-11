@@ -7,8 +7,8 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#ff69b4" />
     <meta name="description" content="🤘" />
+    <link type="Image/x-icon" href="favicon.ico" rel="icon">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <!-- <link type="Image/x-icon" href="favicon.ico" rel="icon"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,6 @@
     />
     <link rel="stylesheet" href="css/bundle.css" />
     <link rel="stylesheet" href="css/colorpicker.css" />
-    <!-- <link rel="stylesheet" href="css/Neumorphic.css" /> -->
   </head>
   <body>
     <aside id="sidenav-open">
@@ -252,261 +251,6 @@
         </section>
       </header>
       <div id="content" class="redacted-script-regular">
-        <!-- <div class="container">
-           <div class="components">
-            <div class="switch">
-              <div class="switch__1">
-                <input id="switch-1" type="checkbox" />
-                <label for="switch-1"></label>
-              </div>
-
-              <div class="switch__2">
-                <input id="switch-2" type="checkbox" checked />
-                <label for="switch-2"></label>
-              </div>
-            </div>
-
-            <div class="checkbox">
-              <div class="checkbox__1">
-                <input id="checkbox-1" type="checkbox" />
-                <label for="checkbox-1"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="512"
-                    height="512"
-                    viewBox="0 0 512 512"
-                  >
-                    <polyline
-                      points="416 128 192 384 96 288"
-                      style="
-                        fill: none;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-width: 32px;
-                      "
-                    />
-                  </svg>
-                </label>
-              </div>
-              <div class="checkbox__2">
-                <input id="checkbox-2" type="checkbox" checked />
-                <label for="checkbox-2"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="512"
-                    height="512"
-                    viewBox="0 0 512 512"
-                  >
-                    <polyline
-                      points="416 128 192 384 96 288"
-                      style="
-                        fill: none;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-width: 32px;
-                      "
-                    />
-                  </svg>
-                </label>
-              </div>
-            </div>
-
-            <div class="radio">
-              <div class="radio__1">
-                <input id="radio-1" type="radio" name="radio" value="1" />
-                <label for="radio-1"></label>
-              </div>
-
-              <div class="radio__2">
-                <input
-                  id="radio-2"
-                  type="radio"
-                  name="radio"
-                  value="2"
-                  checked
-                />
-                <label for="radio-2"></label>
-              </div>
-            </div>
-
-            <div class="btn btn__primary"><p>Button</p></div>
-            <div class="btn btn__secondary"><p>Button</p></div>
-
-            <div class="clock">
-              <div class="hand hours"></div>
-              <div class="hand minutes"></div>
-              <div class="hand seconds"></div>
-              <div class="point"></div>
-              <div class="marker">
-                <span class="marker__1"></span>
-                <span class="marker__2"></span>
-                <span class="marker__3"></span>
-                <span class="marker__4"></span>
-              </div>
-            </div>
-
-            <div class="chip">
-              <div class="chip__icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M441,336.2l-.06-.05c-9.93-9.18-22.78-11.34-32.16-12.92l-.69-.12c-9.05-1.49-10.48-2.5-14.58-6.17-2.44-2.17-5.35-5.65-5.35-9.94s2.91-7.77,5.34-9.94l30.28-26.87c25.92-22.91,40.2-53.66,40.2-86.59S449.73,119.92,423.78,97c-35.89-31.59-85-49-138.37-49C223.72,48,162,71.37,116,112.11c-43.87,38.77-68,90.71-68,146.24s24.16,107.47,68,146.23c21.75,19.24,47.49,34.18,76.52,44.42a266.17,266.17,0,0,0,86.87,15h1.81c61,0,119.09-20.57,159.39-56.4,9.7-8.56,15.15-20.83,15.34-34.56C456.14,358.87,450.56,345.09,441,336.2ZM112,208a32,32,0,1,1,32,32A32,32,0,0,1,112,208Zm40,135a32,32,0,1,1,32-32A32,32,0,0,1,152,343Zm40-199a32,32,0,1,1,32,32A32,32,0,0,1,192,144Zm64,271a48,48,0,1,1,48-48A48,48,0,0,1,256,415Zm72-239a32,32,0,1,1,32-32A32,32,0,0,1,328,176Z"
-                  />
-                </svg>
-              </div>
-              <p>Neumorphic Design</p>
-              <div class="chip__close">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M289.94,256l95-95A24,24,0,0,0,351,127l-95,95-95-95A24,24,0,0,0,127,161l95,95-95,95A24,24,0,1,0,161,385l95-95,95,95A24,24,0,0,0,385,351Z"
-                  />
-                </svg>
-                <ion-icon name="close"></ion-icon>
-              </div>
-            </div>
-
-            <div class="circle">
-              <span class="circle__btn">
-                <svg
-                  class="pause"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M208,432H160a16,16,0,0,1-16-16V96a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16V416A16,16,0,0,1,208,432Z"
-                  />
-                  <path
-                    d="M352,432H304a16,16,0,0,1-16-16V96a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16V416A16,16,0,0,1,352,432Z"
-                  />
-                </svg>
-                <svg
-                  class="play"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M133,440a35.37,35.37,0,0,1-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37,7.46-27.53,19.46-34.33a35.13,35.13,0,0,1,35.77.45L399.12,225.48a36,36,0,0,1,0,61L151.23,434.88A35.5,35.5,0,0,1,133,440Z"
-                  />
-                </svg>
-              </span>
-              <span class="circle__back-1"></span>
-              <span class="circle__back-2"></span>
-            </div>
-
-            <div class="form">
-              <input
-                type="text"
-                class="form__input"
-                placeholder="Type anything..."
-              />
-            </div>
-
-            <div class="search">
-              <input
-                type="text"
-                class="search__input"
-                placeholder="Search..."
-              />
-              <div class="search__icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M456.69,421.39,362.6,327.3a173.81,173.81,0,0,0,34.84-104.58C397.44,126.38,319.06,48,222.72,48S48,126.38,48,222.72s78.38,174.72,174.72,174.72A173.81,173.81,0,0,0,327.3,362.6l94.09,94.09a25,25,0,0,0,35.3-35.3ZM97.92,222.72a124.8,124.8,0,1,1,124.8,124.8A124.95,124.95,0,0,1,97.92,222.72Z"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <div class="segmented-control">
-              <input type="radio" name="radio2" value="3" id="tab-1" checked />
-              <label for="tab-1" class="segmented-control__1">
-                <p>Tab 1</p></label
-              >
-
-              <input type="radio" name="radio2" value="4" id="tab-2" />
-              <label for="tab-2" class="segmented-control__2">
-                <p>Tab 2</p></label
-              >
-
-              <input type="radio" name="radio2" value="5" id="tab-3" />
-              <label for="tab-3" class="segmented-control__3">
-                <p>Tab 3</p></label
-              >
-
-              <div class="segmented-control__color"></div>
-            </div>
-
-            <div class="icon">
-              <div class="icon__home">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"
-                  />
-                  <path
-                    d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"
-                  />
-                </svg>
-              </div>
-              <div class="icon__account">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="512"
-                  height="512"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M332.64,64.58C313.18,43.57,286,32,256,32c-30.16,0-57.43,11.5-76.8,32.38-19.58,21.11-29.12,49.8-26.88,80.78C156.76,206.28,203.27,256,256,256s99.16-49.71,103.67-110.82C361.94,114.48,352.34,85.85,332.64,64.58Z"
-                  />
-                  <path
-                    d="M432,480H80A31,31,0,0,1,55.8,468.87c-6.5-7.77-9.12-18.38-7.18-29.11C57.06,392.94,83.4,353.61,124.8,326c36.78-24.51,83.37-38,131.2-38s94.42,13.5,131.2,38c41.4,27.6,67.74,66.93,76.18,113.75,1.94,10.73-.68,21.34-7.18,29.11A31,31,0,0,1,432,480Z"
-                  />
-                </svg>
-              </div>
-              <div class="icon__settings">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="512"
-                  height="512"
-                  viewBox="0 0 512 512"
-                >
-                  <circle cx="256" cy="256" r="48" />
-                  <path
-                    d="M470.39,300l-.47-.38-31.56-24.75a16.11,16.11,0,0,1-6.1-13.33l0-11.56a16,16,0,0,1,6.11-13.22L469.92,212l.47-.38a26.68,26.68,0,0,0,5.9-34.06l-42.71-73.9a1.59,1.59,0,0,1-.13-.22A26.86,26.86,0,0,0,401,92.14l-.35.13L363.55,107.2a15.94,15.94,0,0,1-14.47-1.29q-4.92-3.1-10-5.86a15.94,15.94,0,0,1-8.19-11.82L325.3,48.64l-.12-.72A27.22,27.22,0,0,0,298.76,26H213.24a26.92,26.92,0,0,0-26.45,22.39l-.09.56-5.57,39.67A16,16,0,0,1,173,100.44c-3.42,1.84-6.76,3.79-10,5.82a15.92,15.92,0,0,1-14.43,1.27l-37.13-15-.35-.14a26.87,26.87,0,0,0-32.48,11.34l-.13.22L35.71,177.9A26.71,26.71,0,0,0,41.61,212l.47.38,31.56,24.75a16.11,16.11,0,0,1,6.1,13.33l0,11.56a16,16,0,0,1-6.11,13.22L42.08,300l-.47.38a26.68,26.68,0,0,0-5.9,34.06l42.71,73.9a1.59,1.59,0,0,1,.13.22A26.86,26.86,0,0,0,111,419.86l.35-.13,37.07-14.93a15.94,15.94,0,0,1,14.47,1.29q4.92,3.11,10,5.86a15.94,15.94,0,0,1,8.19,11.82l5.56,39.59.12.72A27.22,27.22,0,0,0,213.24,486h85.52a26.92,26.92,0,0,0,26.45-22.39l.09-.56,5.57-39.67a16,16,0,0,1,8.18-11.82c3.42-1.84,6.76-3.79,10-5.82a15.92,15.92,0,0,1,14.43-1.27l37.13,14.95.35.14a26.85,26.85,0,0,0,32.48-11.34,2.53,2.53,0,0,1,.13-.22l42.71-73.89A26.7,26.7,0,0,0,470.39,300ZM335.91,259.76a80,80,0,1,1-83.66-83.67A80.21,80.21,0,0,1,335.91,259.76Z"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <div class="slider">
-              <div class="slider__box">
-                <span class="slider__btn" id="find"></span>
-                <span class="slider__color"></span>
-                <span class="slider__tooltip">50%</span>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="wrap">
           <div class="block shadow">
             <h2>Homer</h2>
@@ -686,7 +430,5 @@
     </main>
 
     <script src="js/colorpicker.js"></script>
-
-    <!-- <script src="js/bundle.js"></script> -->
   </body>
 </html>

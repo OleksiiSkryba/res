@@ -25,20 +25,7 @@
 }
 @media (min-width: 1940px) {
   :root > * {
-    /* h1 {
-      font-size: 3.5rem;
-    }
-    h2 {
-      font-size: 3rem;
-    }
-    h3 {
-      font-size: 2.5rem;
-    }
-    p,
-    ul,
-    a { */
     font-size: 1.4rem;
-    /* } */
   }
 }
 
@@ -211,8 +198,6 @@ nav a {
   box-sizing: border-box;
   border-radius: 50%;
   border: 5px solid transparent;
-  /* -webkit-margin-start: -1rem;
-  margin-inline-start: -1rem; */
   block-size: var(--size);
   inline-size: var(--size);
   outline: none;
@@ -277,7 +262,6 @@ main {
     "footer footer";
   grid-template-columns:
     1fr
-    /* minmax(170px, max-content) */
     170px;
   grid-template-rows:
     max-content
@@ -326,7 +310,6 @@ main > header {
     position: sticky;
     top: -5px;
     background: rgba(100, 100, 100, 0.5);
-    /* backdrop-filter: blur(5px); */
     box-shadow: rgba(0, 0, 0, 0.3) 10px 20px 30px 5px,
       rgba(10, 37, 64, 0.35) -1px -2px 3px 2px inset,
       rgba(255, 255, 255, 0.4) 2px 4px 6px 2px inset;
@@ -384,7 +367,6 @@ article > p + h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .d-flex > * {
@@ -394,7 +376,6 @@ article > p + h6 {
 .d-flex img {
   height: 180px;
   width: 180px;
-  /* clip-path: circle(closest-side); */
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.3) 5px 10px 30px 5px;
 }
@@ -403,7 +384,6 @@ article > p + h6 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .ico {
@@ -422,7 +402,6 @@ summary::marker {
   left: -100px;
 }
 
-/*   Open state of the dialog  */
 dialog[open] {
   opacity: 1;
   transform: scaleY(1);
@@ -481,66 +460,19 @@ dialog {
   transition: all 0.7s allow-discrete; */
 }
 
-/*   Before-open state  */
-/* Needs to be after the previous dialog[open] rule to take effect,
-    as the specificity is the same */
-@starting-style {
-  dialog[open] {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-}
-
-/* Transition the :backdrop when the dialog modal is promoted to the top layer */
-dialog::backdrop {
-  /* background-color: rgb(0 0 0 / 0%); */
-  transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
-    background-color 0.7s;
-  /* Equivalent to
-  transition: all 0.7s allow-discrete; */
-}
-
-/* dialog[open]::backdrop {
-  background-color: rgb(0 0 0 / 25%);
-} */
-
-/* This starting-style rule cannot be nested inside the above selector
-because the nesting selector cannot represent pseudo-elements. */
-
-/* @starting-style {
-  dialog[open]::backdrop {
-    background-color: rgb(0 0 0 / 0%);
-  }
-} */
-
 .card {
   height: 27rem;
   display: flex;
   border-radius: 2rem;
   background: var(--greyLight-2);
-  box-shadow:
-   /* 0.2rem 0.4rem 1.8rem var(--greyDark), */
-    /* -0.1rem -0.2rem .4rem var(--white), */ rgba(
-        0,
-        0,
-        0,
-        0.3
-      )
-      10px 20px 30px 5px,
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 20px 30px 5px,
     rgba(10, 37, 64, 0.35) -1px -2px 3px 2px inset,
     rgba(255, 255, 255, 0.4) 2px 4px 6px 2px inset;
   padding: 1.5rem;
   overflow: hidden;
-  /* font-size: 62.5%; */
-}
-
-.butons {
-  /* grid-area: butons; */
-  /* margin: 0 25px; */
 }
 
 #tabs {
-  /* grid-area: tabs; */
   position: absolute;
   top: 70px;
   display: flex;
@@ -553,11 +485,7 @@ because the nesting selector cannot represent pseudo-elements. */
 
 .slid {
   width: 16.4rem;
-  /* height: 345px; */
 }
-/* .slid>*{
-  padding: 1px;
-} */
 
 .gradient {
   display: flex;
@@ -566,9 +494,7 @@ because the nesting selector cannot represent pseudo-elements. */
   border-radius: 1.3rem;
   margin: 11px;
   overflow: hidden;
-  /* -webkit-box-pack: end; */
   justify-content: flex-end;
-  /* margin-top: -40px; */
   background: linear-gradient(
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0.004) 8.1%,
@@ -589,13 +515,13 @@ because the nesting selector cannot represent pseudo-elements. */
   );
 }
 
-.mask{
+.mask {
   display: block;
-    height: 5rem;
-    fill: var(--color);
+  height: 5rem;
+  fill: var(--color);
 }
 
-.colored{
+.colored {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -604,16 +530,16 @@ because the nesting selector cannot represent pseudo-elements. */
   background: var(--color);
 }
 
-.colored>*{
+.colored > * {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  border:1rem solid var(--greyDark);
+  border: 1rem solid var(--greyDark);
   box-shadow: rgba(0, 0, 0, 0.8) 5px 10px 30px 5px;
   margin-top: -10rem;
 }
 
-.colored>article>img{
+.colored > article > img {
   width: 100%;
   filter: drop-shadow(rgba(0, 0, 0, 0.8) 2px 4px 8px);
 }
@@ -635,13 +561,10 @@ because the nesting selector cannot represent pseudo-elements. */
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-
-  /* filter: drop-shadow(0 0 30px #333); */
   z-index: 15;
 }
 
 .accordion {
-  /* height: 90%; */
   width: 90%;
   background: #fe00fa;
   margin: 5px;
@@ -711,7 +634,6 @@ because the nesting selector cannot represent pseudo-elements. */
 .segmented-control__3 {
   width: 4.6rem;
   height: 2.4rem;
-  /* font-size: 1.4rem; */
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -764,11 +686,9 @@ because the nesting selector cannot represent pseudo-elements. */
   height: 1.8rem;
   border: none;
   border-radius: 0.6rem;
-  /* font-size: 1.4rem; */
   padding-left: 2.3rem;
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
     inset -0.2rem -0.2rem 0.5rem var(--white);
-  /* background: none; */
   font-family: inherit;
   color: var(--greyDark);
 }

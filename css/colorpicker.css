@@ -20,7 +20,7 @@
 	/* background: linear-gradient(to right, var(--stops)), var(--transparency); */
 	height: 2.2em;
 	border-radius: .3em;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 1px hsl(0deg 0% 0% / 50%);
 }
 
 #hue {
@@ -72,18 +72,18 @@
 	border-radius: .4em;
 	border: 1px solid rgb(85, 85, 85);
 	box-shadow:
-	 /* 0 0 1 3px white, */
 	 rgba(10, 37, 64, 0.35) -1px -2px 3px 2px inset,
 	 rgba(255, 255, 255, 0.4) 2px 4px 6px 2px inset;
 };
-}
 
 .color-slider::-moz-range-thumb {
 	width: 1em;
 	height: 2.3em;
-	border-radius: .15em;
+	border-radius: .4em;
 	border: 1px solid black;
-	box-shadow: 0 0 0 1px white;
+	box-shadow:
+	rgba(10, 37, 64, 0.35) -1px -2px 3px 2px inset,
+	rgba(255, 255, 255, 0.4) 2px 4px 6px 2px inset;
 	background: transparent;
 }
 
