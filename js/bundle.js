@@ -112,7 +112,8 @@
 //   wave2.classList.toggle('paused');
 // });
 
-fetch().then(data =>{
- console.log(data);
+// fetch().then(data =>{
+//  console.log(data);
   
-})
+// })
+c

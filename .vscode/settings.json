@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": false,
+    "editor.wordWrap": "bounded",
+    "editor.minimap.autohide": true
+}
